@@ -4,12 +4,12 @@ import Classes from './BuildControl.module.css';
 
 const buildControl = (props) => {
     return (
-        <div className = {Classes}>
-            <div>{props.label}</div>
-            <button>Less</button>
-            <button>More</button>
+        <div className = {Classes.buildControl}>
+            <div className={Classes.Label}>{props.label}</div>
+            <button className = {Classes.less} onClick = {props.remove}>Less</button>
+            <button  className={Classes.More} onClick = {props.added}>More</button>
         </div>
     )
 };
 
-export default buildControls;
+export default buildControl;
